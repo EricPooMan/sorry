@@ -20,10 +20,15 @@ body {
 
 
 .topnav p.toptitle {
-padding-left: 16px;
+  padding-left: 16px;
   font-size: 20px;
   font-family: sans-serif;
   color: white
+}
+
+.completeError p.recapErrorText {
+    font-size: 8px
+    color: red
 }
 
 .button {

@@ -12,4 +12,7 @@ function checkIfFinish(e){
     if (! grecaptcha.getResponse().length == ""){
         redirectPage()
     }
+    else {
+        alert("Please complete the reCAPTCHA to continue")
+    }
 }
