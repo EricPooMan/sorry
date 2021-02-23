@@ -4,9 +4,10 @@ var redirectLink = url.searchParams.get("redirect")
 if (redirectLink == "uA3j2Ko2afC6jsF3hiH7AfOk62nd51f3i9web"){
     moveURL = "http://www.youtube.com"
 }
-function redirectComplete(){
-    if(grecaptcha && grecaptcha.getResponse().length > 0)
-{
-     window.location.href = moveURL
-}
+recapRun
+while(recapRun){
+if(grecaptcha && grecaptcha.getResponse().length > 0)
+    {
+        window.location.href = moveURL
+    }
 }
