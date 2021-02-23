@@ -5,9 +5,11 @@ if (redirectLink == "uA3j2Ko2afC6jsF3hiH7AfOk62nd51f3i9web"){
     moveURL = "http://www.youtube.com"
 }
 var recapRun = true
-while(recapRun){
-if( grecaptcha.getResponse().length > 0 )
-    {
-        window.location.href = moveURL
+function redirectPage(e){
+    window.location.href = moveURL
+}
+function checkIfFinish(e){
+    if (! grecaptcha.getResponse().length == ""){
+        redirectPage()
     }
 }
