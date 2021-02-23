@@ -6,7 +6,7 @@ if (redirectLink == "uA3j2Ko2afC6jsF3hiH7AfOk62nd51f3i9web"){
 }
 var recapRun = true
 while(recapRun){
-if(grecaptcha && grecaptcha.getResponse().length > 0)
+if( grecaptcha.getResponse().length > 0 )
     {
         window.location.href = moveURL
     }
