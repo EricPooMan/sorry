@@ -24,6 +24,8 @@ function redirectPage(e){
 function checkIfFinish(e){
     if (! grecaptcha.getResponse().length == ""){
         redirectPage()
+        var errorTexts = document.getElementById("errorText")
+        errorTexts.innerHTML = ""
     }
     else {
         editPageResponseWithNoRecaptchaCompleted()
