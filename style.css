@@ -4,12 +4,12 @@ body {
   background-color: #e3e3e3
 }
 
-.topnav {
+.tBar {
   overflow: hidden;
   background-color: #333;
 }
 
-.topnav a {
+.tBar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -19,16 +19,43 @@ body {
 }
 
 
-.topnav p.toptitle {
+.tBar p.toptitle {
   padding-left: 16px;
   font-size: 20px;
   font-family: sans-serif;
   color: white
 }
 
-.completeError p.recapErrorText {
-    font-size: 8px
-    color: red
+.bBar {
+  overflow: hidden;
+  background-color: #cfcfcf;
+  position: fixed;
+  bottom: 100   px;
+  width: 100%;
+}
+
+.bBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bBar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.bBar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.retryButtonArea {
+    text-align: center;
 }
 
 .button {
